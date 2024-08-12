@@ -16,12 +16,12 @@
 <body>
 
   <!-- Title -->
-  <section id="title" class="gradient-background">
+  <section id="title" class="gradient-background">   <!-- correct adding of class-->
       <!-- bootstrap exmaple -->
-      <div class="container col-xxl-8 px-4 py-5 pb-0">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 pb-0">
+      <div class="container col-xxl-8 px-4 pt-5">      <!-- change py-5 to pt5 and repear below, instead of p-0-->
+        <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
           <div class="col-10 col-sm-8 col-lg-6">
-            <img src="./images/iphone.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="340" loading="lazy" />
+            <img src="./images/iphone.png" class="d-block mx-lg-auto img-fluid" alt="App demo" height="200" loading="lazy" />
           </div>
           <div class="col-lg-6">
             <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Meet new and interesting dogs nearby.</h1>
@@ -51,12 +51,12 @@
 
   </section>
   <!-- Features -->
-  <section id="features" class="mt-4">
-    <div class="container" id="icon-grid">
+  <section id="features">
+    <div class="container mt-5" id="icon-grid">  <!-- corrent creation of container-->
       
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 py-5">
         <div class="col d-flex align-items-start">
-          <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-body-secondary bg-gradient fs-2 me-3">
+          <div class="icon-square d-inline-flex align-items-center justify-content-center bg-body-secondary bg-gradient fs-2 me-3">
           <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-check2-circle"
               viewBox="0 0 16 16">
 <path
@@ -71,8 +71,8 @@
             <p>So easy to use, even your dog could do it.</p>
           </div>
         </div>
-        <div class="col d-flex align-items-start">
-          <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-body-secondary bg-gradient fs-2 me-3">
+        <div class="col d-flex align-items-start">   <!-- should have used icon-square-->
+          <div class="icon-square d-inline-flex align-items-center justify-content-center bg-body-secondary bg-gradient fs-2 me-3">
           <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
             <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z"/>
             <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z"/>
@@ -84,7 +84,7 @@
           </div>
         </div>
         <div class="col d-flex align-items-start">
-          <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-body-secondary bg-gradient fs-2 me-3">
+          <div class="icon-square d-inline-flex align-items-center justify-content-center bg-body-secondary bg-gradient fs-2 me-3">
           <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-arrow-through-heart icon-square"
               viewBox="-4 -4 25 25">
 <path fill-rule="evenodd"
@@ -106,12 +106,12 @@
   <!-- Testimonial -->
   <section id="testimonial" class="mt-5 bg-body-tertiary p-4">
 
-    <div class="container mt-4 mb-4 p-0">
+    <div class="container mt-4 mb-4 p-0">     <!-- wrong jumbo used xxx -->
         
         <div class="p-4 text-center">
-            <h1 class="display-3-5 fs-2">"I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. <br />Woof."</h1>
+            <h2 class="display-3-5 fs-2">"I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. <br />Woof."</h2>
 
-              <img id="dog-image" src="./images/dog-img.jpg" alt="image of dog"/><br />
+              <img id="dog-image" src="./images/dog-img.jpg" alt="image of dog"/><br />   <!-- image correct-->
 
             
             <p class="mt-2 mb-5 fs-5 col-8 mx-auto">Pebbles, New York</p>
@@ -120,19 +120,19 @@
         </div>
     
         <div class="row text-center p-0 m-0">
-          <div class="col-md-3">
+          <div class="col-lg-3 col-sm-12">
             <img src="./images/techcrunch.png" alt="techcrunch logo image" height="30"/>
           </div>
           
-          <div class="col-md-3">
+          <div class="col-lg-3 col-sm-12">
             <img src="./images/mashable.png" alt="mashable logo image" height="30" />
           </div>
           
-          <div class="col-md-3">
+          <div class="col-lg-3 col-sm-12">
               <img src="./images/bizinsider.png" alt="business insider logo image" height="30" />
           </div>
           
-          <div class="col-md-3">
+          <div class="col-lg-3 col-sm-12">
             <img src="./images/tnw.png" alt="tnw logo image" height="30" />
           </div>
         </div>
@@ -146,11 +146,14 @@
       <div class="container">
                 
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-          <h1 class="display-4 fw-normal text-body-emphasis">A Plan for Every Dog's Needs</h1>
+          <h2 class="display-4 fw-normal text-body-emphasis">A Plan for Every Dog's Needs</h2>
           <p class="fs-5 text-body-secondary">Simple and affordable price plans for you and your dog.</p>
         </div>
         
+        <!-- angela copied the sections of pricing and didn't have header/main -->
       
+        <!-- remember to change h1 to h2-->
+
         <main>
           <div class="row row-cols-1 row-cols-md-3 mb-3 text-center py-0">
             <div class="col">
@@ -159,7 +162,7 @@
                   <h4 class="my-0 fw-normal">Chihuahua</h4>
                 </div>
                 <div class="card-body">
-                  <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+                  <h2 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h2>
                   <ul class="list-unstyled mt-3 mb-4">
                     <li>5 Matches Per Day</li>
                     <li>10 Messages Per Day</li>
@@ -186,8 +189,8 @@
               </div>
             </div>
             <div class="col">
-              <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                <div class="card-header py-3 text-bg-dark border-primary">
+              <div class="card mb-4 rounded-3 shadow-sm border-darnk">
+                <div class="card-header py-3 text-bg-dark border-dark">
                   <h4 class="my-0 fw-normal">Mastiff</h4>
                 </div>
                 <div class="card-body">
@@ -217,12 +220,9 @@
   <section id="footer" class="gradient-background">
 
      <div class="container">
-      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5">  <!-- forgot to remove border and remove margin at bottom-->
         <div class="col mb-3">
-          <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-          </a>
-          <p class="text-body-secondary">© Tindog 2024</p>
+          <p class="text-body-secondary">© Tindog 2024</p>    <!-- forgot to remove link-->
         </div>
     
         <div class="col mb-3">
